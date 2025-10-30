@@ -22,7 +22,7 @@ Created a Vultr cloud instance with initial specifications:
 - **OS:** Ubuntu Server
 - **Location:** New Jersey, USA
 
-![Vultr Instance](image1.png)
+![Vultr Instance](vultrsetup.jpg)
 *Initial Vultr cloud compute instance*
 
 ### 2. SSH Connection & User Configuration
