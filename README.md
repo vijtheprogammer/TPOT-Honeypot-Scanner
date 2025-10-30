@@ -39,7 +39,7 @@ su - aryan
 cd ~
 ```
 
-![SSH Connection](image2.png)
+![SSH Connection](userconsole.jpg)
 *SSH terminal connection established*
 
 ### 3. T-Pot Installation
@@ -54,10 +54,10 @@ cd tpotce
 ./install.sh
 ```
 
-![Installation Directory](image3.png)
+![Installation Directory](homedirectory.jpg)
 *T-Pot installation files*
 
-![Installation Script](image4.png)
+![Installation Script](tpotinstallation.jpg)
 *Running the T-Pot installation script*
 
 ### 4. Installation Configuration
@@ -66,7 +66,7 @@ Selected installation type: **HIVE (Full Installation)**
 - Full distributed setup with WebUI
 - Elasticsearch and Kibana for log analysis
 
-![Installation Options](image5.png)
+![Installation Options](tpotinstallation2.jpg)
 *T-Pot installation type selection*
 
 ### 5. Network Configuration
@@ -75,7 +75,7 @@ Reviewed port mappings and service configurations to ensure proper honeypot expo
 - Port 64295: SSH management
 - Multiple honeypot services on standard ports (22, 23, 80, 443, 8728, etc.)
 
-![Port Configuration](image6.png)
+![Port Configuration](installationsuccessful.jpg)
 *Active network ports and service configurations*
 
 ### 6. Infrastructure Upgrade
@@ -88,16 +88,13 @@ Reviewed port mappings and service configurations to ensure proper honeypot expo
 
 After upgrade, all services initialized successfully.
 
-![Upgraded VM](image1.png)
-*VM after resource upgrade*
-
 ### 7. Web Interface Access
 Successfully accessed T-Pot dashboard at `https://149.28.62.100:64297`
 
-![Web Login](image7.png)
+![Web Login](webguisuccessful.jpg)
 *T-Pot web interface login*
 
-![Dashboard](image8.png)
+![Dashboard](attackmap.jpg)
 *T-Pot main dashboard with analysis tools*
 
 ---
@@ -111,16 +108,13 @@ Verified honeypot functionality by conducting an authorized Nmap scan from my lo
 nmap -sV 149.28.62.100
 ```
 
-![Nmap Scan](image10.png)
-*Port scan test from local machine*
-
 **Results:**
 - ✅ Honeypot successfully detected and logged the scan
 - ✅ Source IP (173.71.120.207) appeared in attack map
 - ✅ Multiple honeypots triggered (Honeytrap)
 - ✅ All data captured in Kibana logs
 
-![Attack Detection](image10.png)
+![Attack Detection](successfulhit.jpg)
 *Successful attack detection in T-Pot dashboard*
 
 ---
@@ -135,7 +129,7 @@ The T-Pot dashboard provides real-time visualization of:
 - Targeted ports and services
 - Attack timelines
 
-![Main Dashboard](image11.png)
+![Main Dashboard](elasticdashboard.jpg)
 *T-Pot main dashboard showing attack statistics*
 
 ### Attack Analysis
@@ -144,14 +138,8 @@ After just hours of deployment, captured attacks from multiple countries:
 - **Netherlands:** 2 attacks
 - Multiple attack vectors detected (SSH, port scanning, RouterOS exploitation)
 
-![Attack Breakdown](image12.png)
-*Detailed attack source and ASN analysis in Kibana*
-
-### External Threat Correlation
-The SecurityMeter (Sicherheitstacho) integration shows real-time global attack patterns:
-
-![Security Meter](image13.png)
-*Real-time global attack visualization from Sicherheitstacho*
+![Attack Breakdown](elasticiplist.jpg)
+*Detailed attack source and ASN analysis in Elasic*
 
 ---
 
