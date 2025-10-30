@@ -23,6 +23,7 @@ Created a Vultr cloud instance with initial specifications:
 - **Location:** New Jersey, USA
 
 ![Vultr Instance](vultrsetup.jpg)
+
 *Initial Vultr cloud compute instance*
 
 ### 2. SSH Connection & User Configuration
@@ -40,6 +41,7 @@ cd ~
 ```
 
 ![SSH Connection](userconsole.jpg)
+
 *SSH terminal connection established*
 
 ### 3. T-Pot Installation
@@ -55,9 +57,11 @@ cd tpotce
 ```
 
 ![Installation Directory](homedirectory.jpg)
+
 *T-Pot installation files*
 
 ![Installation Script](tpotinstallation.jpg)
+
 *Running the T-Pot installation script*
 
 ### 4. Installation Configuration
@@ -67,6 +71,7 @@ Selected installation type: **HIVE (Full Installation)**
 - Elasticsearch and Kibana for log analysis
 
 ![Installation Options](tpotinstallation2.jpg)
+
 *T-Pot installation type selection*
 
 ### 5. Network Configuration
@@ -76,6 +81,7 @@ Reviewed port mappings and service configurations to ensure proper honeypot expo
 - Multiple honeypot services on standard ports (22, 23, 80, 443, 8728, etc.)
 
 ![Port Configuration](installationsuccessful.jpg)
+
 *Active network ports and service configurations*
 
 ### 6. Infrastructure Upgrade
@@ -92,9 +98,11 @@ After upgrade, all services initialized successfully.
 Successfully accessed T-Pot dashboard at `https://149.28.62.100:64297`
 
 ![Web Login](webguisuccessful.jpg)
+
 *T-Pot web interface login*
 
 ![Dashboard](attackmap.jpg)
+
 *T-Pot main dashboard with analysis tools*
 
 ---
@@ -115,6 +123,7 @@ nmap -sV 149.28.62.100
 - ✅ All data captured in Kibana logs
 
 ![Attack Detection](successfulhit.jpg)
+
 *Successful attack detection in T-Pot dashboard*
 
 ---
@@ -130,6 +139,7 @@ The T-Pot dashboard provides real-time visualization of:
 - Attack timelines
 
 ![Main Dashboard](elasticdashboard.jpg)
+
 *T-Pot main dashboard showing attack statistics*
 
 ### Attack Analysis
@@ -139,6 +149,7 @@ After just hours of deployment, captured attacks from multiple countries:
 - Multiple attack vectors detected (SSH, port scanning, RouterOS exploitation)
 
 ![Attack Breakdown](elasticiplist.jpg)
+
 *Detailed attack source and ASN analysis in Elasic*
 
 ---
