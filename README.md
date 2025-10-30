@@ -155,48 +155,24 @@ The SecurityMeter (Sicherheitstacho) integration shows real-time global attack p
 
 ---
 
-## 🔍 Threat Intelligence Analysis
+## 🔍 Next Steps: Threat Intelligence Analysis
 
-### Investigation Workflow
-For each suspicious IP detected, I performed the following analysis:
+Now that the honeypot is operational and capturing real-world attacks, I plan to:
 
-1. **Honeypot Data Collection** - Review attack details in T-Pot dashboard
-2. **Kibana Deep Dive** - Search logs for attack patterns, credentials, commands
-3. **Threat Intel Lookups:**
-   - AbuseIPDB - Check abuse confidence score and report history
-   - GreyNoise - Identify if IP is mass scanner or targeted attacker
+1. **Monitor daily** for 1-2 weeks to capture diverse attack patterns
+2. **Investigate 10 unique incidents** using threat intelligence sources:
+   - AbuseIPDB - Check abuse confidence scores and report history
+   - GreyNoise - Identify mass scanners vs. targeted attacks
    - VirusTotal - Check security vendor detections
-4. **MITRE ATT&CK Mapping** - Classify tactics and techniques
-5. **Documentation** - Write detailed incident report
+3. **Document findings** in detailed incident reports with:
+   - Attack timeline and detection details
+   - Threat intelligence analysis
+   - MITRE ATT&CK technique mapping
+   - IOC extraction
+   - Recommended response actions
+4. **Analyze attack patterns** to identify trends in threat actor behavior
 
-### Example: High-Severity Finding
-
-**IP:** 87.120.191.13  
-**Classification:** MALICIOUS - RouterOS Bruteforce Campaign  
-**Abuse Score:** 100% (26,518 reports)  
-**Status:** Actively attacking globally
-
-![AbuseIPDB Report](image1.png)
-![GreyNoise Classification](image3.png)
-![VirusTotal Detection](image4.png)
-
----
-
-## 📁 Investigation Reports
-
-I documented **10 distinct security incidents** over one week of monitoring:
-
-- **Incident #1:** Self-initiated port scan validation
-- **Incident #2:** RouterOS bruteforce campaign (87.120.191.13)
-- **Incidents #3-10:** [Reports to be added as separate files]
-
-Each report includes:
-- Attack timeline and detection details
-- Threat intelligence lookups (AbuseIPDB, GreyNoise, VirusTotal)
-- Attack classification and MITRE ATT&CK mapping
-- IOC extraction and recommended response actions
-
-**See individual incident reports in the `/incidents` directory.**
+**Investigation reports will be added to the `/incidents` directory as they are completed.**
 
 ---
 
