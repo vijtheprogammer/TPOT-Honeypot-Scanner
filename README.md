@@ -228,7 +228,7 @@ Now that the honeypot is operational and capturing real-world attacks, I plan to
 
 **Aryan Vij**  
 Aspiring SOC Analyst  
-[LinkedIn](#) | [GitHub](#) | [Email](#)
+[LinkedIn](https://www.linkedin.com/in/aryan-vij/) | [GitHub](https://github.com/vijtheprogammer/) | [Email](aryan.vij@gmail.com)
 
 ---
 
