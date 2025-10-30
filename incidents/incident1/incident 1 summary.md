@@ -22,6 +22,8 @@ Multiple connection attempts to port 8728 detected from a single source IP over 
 ## Threat Intelligence Investigation
 
 ### AbuseIPDB Analysis
+![AbuseIPDB Results](abuseipdb.jpg)
+
 - **Abuse Confidence Score:** 100% (maximum threat level)
 - **Total Reports:** 26,518 reports from 1,311 distinct sources
 - **First Seen:** August 6, 2025
@@ -30,13 +32,19 @@ Multiple connection attempts to port 8728 detected from a single source IP over 
 - **Primary Category:** Port Scanning (targeting port 8728)
 - **Status:** ⚠️ **ACTIVELY ENGAGED** in abusive activities within last week
 
+![IP Abuse Reports Detail](ipabusereports.jpg)
+
 ### GreyNoise Analysis
+![GreyNoise Results](greynoise.jpg)
+
 - **Classification:** MALICIOUS
 - **Behavior:** Mass internet scanner targeting RouterOS systems
 - **Tag:** "RouterOS Bruteforcer"
 - **Note:** Scanning entire internet, not targeted specifically at us
 
 ### VirusTotal Analysis
+![VirusTotal Results](virustotal.jpg)
+
 - **Detection Rate:** 15/95 security vendors flagged as malicious
 - **Community Score:** -6 (negative reputation)
 - **Vendor Detections:**
